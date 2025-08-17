@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Toko GuppyKita</title>
+    <meta name="description" content="Toko online ikan guppy berkualitas dengan harga terjangkau.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* ====== RESET & DASAR ====== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #0d0d0d;
+            background: #fafafa;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ====== HEADER ====== */
+        header {
+            background: #46be46ec;
+            padding: 16px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 6px rgb(252, 254, 255);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 1.2rem;
+            color: #000000;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color .2s;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+
+        /* ====== BANNER ====== */
+        .banner {
+            background: url('assets/img/banner/guppy-banner.jpg') center/cover no-repeat;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            text-align: center;
+            position: relative;
+        }
+
+        .banner::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(30, 254, 29, 0.45);
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0db9fd;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 30px;
+            transition: background .3s;
+        }
+
+        .btn:hover {
+            background: #084298;
+        }
+
+        /* ====== SECTION ====== */
+        section {
+            padding: 60px 5%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+
+        /* ====== KOLEKSI UNGGULAN ====== */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            transition: transform .3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .product-card img {
+            height: 300px;
+            width: 60%;
+            object-fit: cover;
+        }
+
+        .product-card .info {
+            padding: 16px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            color: #000000;
+            font-weight: bold;
+        }
+
+        /* ====== TESTIMONI ====== */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        .testimonial {
+            background: #fff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .testimonial .author {
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* ====== FOOTER ====== */
+        footer {
+            background: #58cb26;
+            color: #020202;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ====== HEADER ====== -->
+    <header>
+        <h1>Aquarium Guppy Indah</h1>
+        <nav>
+            <a href="#koleksi">Koleksi</a>
+            <a href="#testimoni">Testimoni</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- ====== BANNER ====== -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>𝔸𝕢𝕦𝕒𝕣𝕚𝕦𝕞 𝔾𝕦𝕡𝕡𝕪 𝕀𝕟𝕕𝕒𝕙</h2>
+            <p>silahkan di order </p>
+            <a href="#koleksi" class="btn">Belanja Sekarang</a>
+        </div>
+    </section>
+
+    <!-- ====== KOLEKSI UNGGULAN ====== -->
+    <section id="koleksi">
+        <h2>Koleksi Unggulan</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="c:\Users\ROG STRIX G18\Downloads\Gambar_1\MelodyMU.jpg" alt="Guppy Red Tail">
+                <div class="info">
+                    <h3>Guppy Red Tail</h3>
+                    <p class="price">Rp 25.000</p>
+                </div>
+                <h2>Koleksi Unggulan</h2>
+                <div class="products">
+                    <div class="product-card">
+                        <img src="assets/img/products/guppy1.jpg" alt="Guppy Red Tail">
+                        <div class="info">
+                            <h3>Guppy Red Tail</h3>
+                            <p class="price">Rp 25.000</p>
+
+                        </div>
+
+                        <h2>Koleksi Unggulan</h2>
+                        <div class="products">
+                            <div class="product-card">
+                                <img src="assets/img/products/guppy1.jpg" alt="Guppy Red Tail">
+                                <div class="info">
+                                    <h3>Guppy Red Tail</h3>
+                                    <p class="price">Rp 25.000</p>
+                                </div>
+                                <h2>Koleksi Unggulan</h2>
+                                <div class="products">
+                                    <div class="product-card">
+                                        <img src="assets/img/products/guppy1.jpg" alt="Guppy Red Tail">
+                                        <div class="info">
+                                            <h3>Guppy Red Tail</h3>
+                                            <p class="price">Rp 25.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="assets/img/products/guppy2.jpg" alt="Guppy Blue Moscow">
+                                        <div class="info">
+                                            <h3>Guppy Blue Moscow</h3>
+                                            <p class="price">Rp 30.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="assets/img/products/guppy3.jpg" alt="Guppy Albino Full Red">
+                                        <div class="info">
+                                            <h3>Guppy Albino Full Red</h3>
+                                            <p class="price">Rp 40.000</p>
+                                        </div>
+                                    </div>
+                                </div>
+    </section>
+
+    <!-- ====== TESTIMONI ====== -->
+    <section id="testimoni">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Ikannya sehat dan warnanya sangat indah. Pengiriman juga cepat sekali!"</p>
+                <div class="author">– Budi, Jakarta</div>
+            </div>
+            <div class="testimonial">
+                <p>"Pertama kali beli di sini, langsung jatuh cinta. Harga murah, kualitas premium."</p>
+                <div class="author">– Siti, Bandung</div>
+            </div>
+            <div class="testimonial">
+                <p>"Koleksinya lengkap banget. Anak saya suka sekali melihat ikan guppy berenang."</p>
+                <div class="author">– Andi, Surabaya</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer id="kontak">
+        <p>© Aquarium Guppy Indah | Hubungi: <a href="mailto:info@guppykita.com">tiktok - Aquarium Guppy Indah</a> | WA:
+            0882
+            4246 8081
+        </p>
+    </footer>
+</body>
+
+</html>
